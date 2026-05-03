@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>securehost.pl - Kompleksowe Bezpieczeństwo IT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9',
+                        secondary: '#0f172a',
+                        accent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-primary selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="bg-secondary text-white sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-shield-halved text-primary text-3xl"></i>
+                    <span class="font-bold text-2xl tracking-wider">securehost<span class="text-primary">.pl</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Start</a>
+                        <a href="#features" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Rozwiązania</a>
+                        <a href="#contact" class="bg-primary hover:bg-accent text-white px-5 py-2.5 rounded-md text-sm font-bold transition-colors">Skontaktuj się</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-secondary text-white overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-24 md:py-32 flex flex-col items-center text-center">
+            <span class="text-primary font-semibold tracking-wide uppercase text-sm mb-4">Cyberbezpieczeństwo nowej generacji</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                Zabezpiecz swoją infrastrukturę <br>z <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">securehost.pl</span>
+            </h1>
+            <p class="mt-4 max-w-2xl text-xl text-gray-300 mb-10">
+                Wdrażamy zaawansowane rozwiązania klasy Enterprise: Zero Trust Architecture, wydajne sieci VPN oraz Secure Email Gateway. Chroń swoje dane przed najnowszymi zagrożeniami.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#contact" class="bg-primary hover:bg-accent text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 shadow-lg shadow-primary/30">
+                    Rozpocznij współpracę
+                </a>
+                <a href="#features" class="bg-transparent border-2 border-gray-500 hover:border-gray-300 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300">
+                    Poznaj rozwiązania
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-base text-primary font-semibold tracking-wide uppercase">Nasze Usługi</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Kompleksowa Ochrona IT
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    Budujemy środowiska oparte na najnowszych standardach bezpieczeństwa, minimalizując ryzyko ataków i wycieku danych.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Feature 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col items-center text-center">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 text-primary mb-6">
+                        <i class="fa-solid fa-fingerprint text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Zero Trust Architecture</h3>
+                    <p class="text-gray-600">
+                        Zasada "nigdy nie ufaj, zawsze weryfikuj". Wdrażamy architekturę eliminującą zaufanie oparte na lokalizacji sieciowej. Każdy dostęp do zasobów jest ściśle autoryzowany i monitorowany.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col items-center text-center">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 text-primary mb-6">
+                        <i class="fa-solid fa-network-wired text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Enterprise VPN</h3>
+                    <p class="text-gray-600">
+                        Bezpieczny i wydajny dostęp zdalny dla Twoich pracowników. Szyfrowane tunele, wieloskładnikowe uwierzytelnianie (MFA) i pełna kontrola nad przepływem danych w firmie.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col items-center text-center">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 text-primary mb-6">
+                        <i class="fa-solid fa-envelope-circle-check text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Secure Email Gateway</h3>
+                    <p class="text-gray-600">
+                        Zaawansowana ochrona poczty elektronicznej. Filtrowanie spamu, wykrywanie phishingu, ochrona przed złośliwym oprogramowaniem (malware/ransomware) i ochrona przed wyciekiem danych (DLP).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="py-16 bg-gray-50 border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-lg font-semibold text-gray-500 mb-8">Gotowi na najnowsze wyzwania w świecie IT</h3>
+            <div class="flex justify-center gap-8 md:gap-16 flex-wrap opacity-60 grayscale">
+                <i class="fa-brands fa-aws text-5xl"></i>
+                <i class="fa-brands fa-linux text-5xl"></i>
+                <i class="fa-brands fa-docker text-5xl"></i>
+                <i class="fa-solid fa-server text-5xl"></i>
+                <i class="fa-solid fa-lock text-5xl"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Contact Section -->
+    <section id="contact" class="bg-secondary py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                Gotowy zabezpieczyć swój biznes?
+            </h2>
+            <p class="mt-4 text-xl text-gray-300">
+                Skontaktuj się z naszymi ekspertami, aby omówić audyt bezpieczeństwa i wdrożenie rozwiązań dopasowanych do Twojej firmy.
+            </p>
+            <div class="mt-10 bg-white rounded-lg p-8 shadow-2xl">
+                <form class="space-y-6 text-left">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Imię i nazwisko</label>
+                            <input type="text" id="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary bg-gray-50 border p-3" placeholder="Jan Kowalski">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Adres email</label>
+                            <input type="email" id="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary bg-gray-50 border p-3" placeholder="jan@firma.pl">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Wiadomość</label>
+                        <textarea id="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary bg-gray-50 border p-3" placeholder="W czym możemy pomóc?"></textarea>
+                    </div>
+                    <div>
+                        <button type="button" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-primary hover:bg-accent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors">
+                            Wyślij zapytanie
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <i class="fa-solid fa-shield-halved text-primary text-2xl"></i>
+                    <span class="font-bold text-xl text-white tracking-wider">securehost<span class="text-primary">.pl</span></span>
+                </div>
+                <p class="text-sm">Twoi eksperci od cyberbezpieczeństwa. Zaufaj profesjonalistom i chroń swoje dane.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Usługi</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-primary transition-colors">Zero Trust Architecture</a></li>
+                    <li><a href="#" class="hover:text-primary transition-colors">Enterprise VPN</a></li>
+                    <li><a href="#" class="hover:text-primary transition-colors">Secure Email Gateway</a></li>
+                    <li><a href="#" class="hover:text-primary transition-colors">Audyty bezpieczeństwa</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Kontakt</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><i class="fa-solid fa-envelope mr-2 text-primary"></i> kontakt@securehost.pl</li>
+                    <li><i class="fa-solid fa-phone mr-2 text-primary"></i> +48 123 456 789</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-sm text-center">
+            &copy; 2024 securehost.pl. Wszelkie prawa zastrzeżone.
+        </div>
+    </footer>
+
+</body>
+</html>
